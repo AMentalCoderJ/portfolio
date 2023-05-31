@@ -670,3 +670,50 @@ justify-content: center;
 .sobre_info a{
 color: #fff;
 }
+
+
+
+/* CARROSEL */
+
+
+ 
+ .imagem-container {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .imagem-container img {
+    max-width: 100%;
+    max-height: 100%;
+ }
+ 
+
+.mudaracor{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.fechar{
+    
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.borda{
+    font-weight: bolder;
+    justify-self: start;
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 5px;
+    border: 2px solid red;
+}
+
+.centralizar{
+    text-align: center;
+    padding: 50px 0 0 0;
+    
+}

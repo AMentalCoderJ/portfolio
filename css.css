@@ -343,25 +343,6 @@ font-size: 1.5rem;
         grid-column: 1/-1;
     }
 
-    .my_services {
-        display: grid;
-        justify-content: center;
-        padding: 10px ;
-    }
-
-    .my_services ul{
-    display: flex;
-    flex-wrap: wrap;
-    
-    
-    }
-
-    .my_services ul li{
-        
-       
-
-   
-    }
 
     .resume_generica .experience_content, .education_content{
         justify-self: center;
@@ -385,11 +366,7 @@ font-size: 1.5rem;
 
 /* Seção SERVICES */
 
-.services{
-    margin-top: -30px;
-    padding: 60px;
-    background-color: #151515;
-}
+
 
 .my_services{
     padding: 60px;
@@ -406,7 +383,7 @@ font-size: 1.5rem;
 
 .my_services ul li{
     cursor: pointer;
-    
+    position: relative;
     padding: 10px;
     display: grid;
     gap: 30px;

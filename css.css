@@ -706,7 +706,8 @@ color: #fff;
 .borda{
     font-weight: bolder;
     justify-self: start;
-    color: #fff;
+    background-color: transparent;
+    color: white;
     padding: 15px 40px;
     border-radius: 5px;
     border: 2px solid red;

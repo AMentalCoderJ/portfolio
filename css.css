@@ -45,6 +45,22 @@ header .navegacao-primaria li a{
     font-size: 1.3rem;
 }
 
+header .navegacao-primaria li a::after {
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-bottom: 4px solid transparent;
+    display: block;
+    transition: .9s ;
+}
+
+header .navegacao-primaria li a:hover::after {
+    width: 100%;
+    height: 0px;
+    padding: 0px;
+    border-bottom: 4px solid #dc3545;
+}
+
 .section-div{
     
     animation: inicializar .7s forwards;
@@ -235,7 +251,7 @@ color: #707070;
 .sobre_info{
     margin-top: 30px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column: 1/-1;
     gap: 15px;
     align-items: center;
@@ -251,6 +267,7 @@ font-size: 1.5rem;
 
 .sobre_info p{
     font-size: .9rem;
+    color: #fff;
 }
 
 @keyframes sobeSecao{
@@ -281,6 +298,7 @@ font-size: 1.5rem;
     .section-div img{
         display: none;
 
+   
     }
     .section-div{
         background-image: url(Fundo\ Portifolio.png);
@@ -290,6 +308,20 @@ font-size: 1.5rem;
 
     header .navegacao-primaria{
         display: none;
+    }
+    header .navegacao-primaria.ativado{
+        background: linear-gradient(rgba(43, 42, 42, 0.176), rgba(46, 46, 46, 0.724));
+        position: absolute;
+        display: grid;
+        top: 80px;
+        color: white;
+        z-index: 1;
+        padding: 30px;
+        font-size: 1.3rem;
+        font-weight: bold;
+        border-radius: 0 0 4px 4px;
+        right: 20px;
+        animation: upSection .8s ease-in-out forwards;
     }
 
     header i{
@@ -304,6 +336,49 @@ font-size: 1.5rem;
     .sobre_conteudo{
         grid-column: 1/-1;
         justify-self: center;
+    }
+
+    .sobre_info p{
+        font-size: 16px;
+        grid-column: 1/-1;
+    }
+
+    .my_services {
+        display: grid;
+        justify-content: center;
+        padding: 10px ;
+    }
+
+    .my_services ul{
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+    }
+
+    .my_services ul li{
+        
+       
+
+   
+    }
+
+    .resume_generica .experience_content, .education_content{
+        justify-self: center;
+        grid-column: 1/-1;
+    }
+
+    .resume_generica .education{
+        grid-column: 1/-1;
+        grid-row: 3;
+        justify-self: center;
+        margin: 30px 0px;
+    }
+    .resume_generica .experiencia{
+        grid-column: 1/-1;
+        grid-row: 1;
+        justify-self: center;
+        
     }
 }
 
@@ -331,7 +406,7 @@ font-size: 1.5rem;
 
 .my_services ul li{
     cursor: pointer;
-    position: relative;
+    
     padding: 10px;
     display: grid;
     gap: 30px;
@@ -543,3 +618,78 @@ justify-content: center;
         font-size: 1.1rem;
     }
 
+/* HABILIDADES */
+.habilidade{
+    color: #f7f7f7;
+    padding: 30px;
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+    align-items: start;
+}
+
+.habilidade h2{
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+    background-color: #ff5d56;
+    justify-self: start;
+    text-align: center;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.habilidade h2 i{
+    padding-right: 10px;
+}
+
+.habilidade_content{
+    font-size: 1.5rem;
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 10px;
+}
+
+.habilidade_content h3{
+    font-size: 1.5rem;
+}
+
+.habilidade_content ul{
+    display: flex;
+}
+
+.topo{
+    
+    color: #f7f7f7;
+    padding: 30px;
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+    align-items: start;
+
+    
+}
+
+.topo h3{
+    animation: pisca .85s infinite;
+    background-color: #dc3535;
+    font-size: 1.8rem;
+    color: white;
+    justify-self: start;
+    text-align: center;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.topo h3 i{
+    color: white;
+    margin-right: 5px;
+}
+.topo a:active, a:visited{
+    color: white;
+}
+
+.sobre_info a{
+color: #fff;
+}

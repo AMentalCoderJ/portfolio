@@ -98,5 +98,11 @@ function abrirJanela() {
    minhaJanela = window.open('sup.html', "_blank", "width=500,height=500");
 }
 
+var minhaJanela;
+
+function abrirCV() {
+   minhaJanela = window.open('curriculo.html', "_blank", "width=500,height=500");
+}
+
 
 

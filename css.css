@@ -704,7 +704,9 @@ color: #fff;
     justify-content: center;
     
 }
-
+a:link{
+    text-decoration: none;
+}
 .borda{
     font-weight: bolder;
     justify-self: start;
@@ -724,7 +726,17 @@ color: #fff;
 .topo{
     margin-top: 100px;
 }
-
+.retirar{
+    text-decoration: none;
+}
 #naofeito{
     margin-top: 80px;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;   
+   }
+
+   

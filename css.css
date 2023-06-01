@@ -43,6 +43,7 @@ header .navegacao-primaria li a{
     padding: 10px;
     color: #fff;
     font-size: 1.3rem;
+    text-decoration: none;
 }
 
 header .navegacao-primaria li a::after {

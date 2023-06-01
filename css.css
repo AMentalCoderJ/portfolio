@@ -362,6 +362,7 @@ font-size: 1.5rem;
         justify-self: center;
         
     }
+    
 }
 
 
@@ -718,4 +719,12 @@ color: #fff;
     text-align: center;
     padding: 50px 0 0 0;
     
+}
+
+.topo{
+    margin-top: 100px;
+}
+
+#naofeito{
+    margin-top: 80px;
 }

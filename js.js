@@ -106,3 +106,30 @@ function abrirCV() {
 
 
 
+function abrirVideo() {
+    document.getElementById('imagem').style.display = 'none';
+    document.getElementById('video').style.display = 'block';
+    var elementosTopo = document.getElementsByClassName('topo');
+    for (var i = 0; i < elementosTopo.length; i++) {
+        elementosTopo[i].style.display = 'none';
+    }
+    document.getElementById('fecharVideo').style.display = 'block'; // Exibe o botão de fechar
+}
+
+
+function fecharVideo() {
+    document.getElementById('imagem').style.display = 'block'; // Exibe a imagem novamente
+    document.getElementById('video').style.display = 'none'; // Esconde o vídeo
+    document.getElementById('fecharVideo').style.display = 'none'; // Esconde o botão de fechar
+
+    var elementosTopo = document.getElementsByClassName('topo');
+    for (var i = 0; i < elementosTopo.length; i++) {
+        elementosTopo[i].style.color = '#f7f7f7'; // Restaura a cor
+        elementosTopo[i].style.padding = '30px'; // Restaura o padding
+        elementosTopo[i].style.display = 'grid'; // Restaura o display
+        elementosTopo[i].style.justifyContent = 'center'; // Restaura o justify-content
+        elementosTopo[i].style.gap = '10px'; // Restaura o gap
+        elementosTopo[i].style.alignItems = 'start'; // Restaura o align-items
+    }
+}
+

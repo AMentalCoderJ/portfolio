@@ -94,9 +94,7 @@ menuMobile();
 
 var minhaJanela;
 
-function abrirJanela() {
-   minhaJanela = window.open('sup.html', "_blank", "width=500,height=500");
-}
+
 
 var minhaJanela;
 

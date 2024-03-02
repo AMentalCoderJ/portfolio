@@ -46,6 +46,7 @@ header .navegacao-primaria li a{
     color: #fff;
     font-size: 1.3rem;
     text-decoration: none;
+    align-items: center;
 }
 
 header .navegacao-primaria li a::after {
